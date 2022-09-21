@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- navbar for pc -->
+    <nav class="desk_nav">
+        <div class="logo">
+            <img src="assets/stackhub new logo 1.svg" alt="" srcset="">
+        </div>
+        <div class="nav_links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="join_btn">
+            <button>Join Community</button>
+        </div>
+    </nav>
+    <div class="res_nav">
+        <div class="logo">
+            <img src="assets/stackhub new logo 1.svg" alt="" srcset="">
+        </div>
+        <div class="nav_open">
+            <i class="bi bi-list-nested"onclick="openNav()"> </i>
+        </div>
+    </div>
+    <nav id="myNav" class="overlay">
+        <i href="javascript:void(0)" class="closebtn bi bi-x" onclick="closeNav()"></i>
+        <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+            <a class="join_btn">
+                <button>Join Community</button>
+            </a>
+        </div>
+    </nav>
+</body>
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+</html>
