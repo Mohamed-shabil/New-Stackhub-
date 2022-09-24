@@ -80,7 +80,7 @@
 
 /* Home Screen */
 .home_container{
-  background: #F6F6F7;
+  background: #E5E5E5;
   width: 100%;
   height: auto;
   background: url(assets/Mask\ group.svg);
@@ -107,6 +107,12 @@
   font-size: 60px;
   line-height: 77px;
 }
+.hero_text h1 span{
+  background:url(assets/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: 10;
+}
 .hero_text p{
   margin-top: 18px;
   font-size: 22px;
@@ -127,7 +133,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction:row;
-  margin-top: 100px;
+  margin: 100px 0;
   width: 100%;
   height: 50%;
   gap: 20px;
@@ -201,7 +207,7 @@
     height: 40px !important;
   }
   .gallery{
-    margin-top: 20px!important;
+    margin:0 20px!important;
 
   }
   .services{
@@ -211,11 +217,42 @@
     font-size: 30px!important;
     line-height: 35px;
   }
+  .carousel_container{
+    padding: 10px!important;
+  }
+  .carousel_InnerContainer{
+    flex-direction: column!important;
+    height: auto!important;
+
+  }
+  .carousel_text{
+    width: 95%!important;
+  }
+  .carousel{
+    width: 90%!important;
+    height:100%;
+  }
+  .swiper-slide{
+    height: 300px!important;
+  }
+  .quality_Container{
+    padding: 10px!important;
+    flex-direction: column!important;
+    height: auto!important;
+  }
+  .qualities{
+    width: 100%!important;
+  }
+  .quality_img{
+    width: 100%!important;
+    height: 400px!important;
+    border-radius: 20px 0 20px 0!important;
+  }
 }
 .services{
   width: 100%;
-  height:100vh;
-  padding: 0 135px;
+  height:auto;
+  padding: 0 135px 135px;
 }
 .service_title{
   display:grid;
@@ -242,7 +279,7 @@
   max-width: 350px;
   width: 90%;
   padding: 20px;
-  margin: 4%;
+  margin: 2%;
   border-radius: 10px;
   transition: 0.4s;
   row-gap: 80px;
@@ -268,9 +305,118 @@
 }
 .carousel_section{
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 .carousel_container{
   width: 100%;
-  padding: 135px;
+  padding: 80px 135px;
+  max-height: auto;
 }
+.carousel_InnerContainer{
+  display: flex;
+  flex-direction:row;
+  background: #F6F6F7;
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.carousel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53%;
+  height: 90%;
+}
+.carousel_text{
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.swiper-wrapper{
+  width: 100%!important;
+  height: 100%!important;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.swiper-button-next,
+.swiper-button-prev{
+  color: #f1f1f1!important;
+  width: 50px !important;
+  height: 50px !important;
+}
+/* Quality */
+.quality{
+  width: 100%;
+  height: 100%;
+  background-color: #F6F6F7;
+}
+.quality_Container{
+  padding: 100px 0;
+  width: 100%;
+  padding-left: 135px;
+  height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.qualities{
+  width: 30%;
+  height: auto;
+}
+.quality_card{
+  max-width: 380px;
+  width: 98%;
+  height: 142px;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.quality_card:hover{
+  background: #fff;
+}
+.quality_card:hover h3 i{
+  color: #000;
+}
+.quality_card h3{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  
+}
+.quality_card h3 i{
+  margin-right: 17px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #666768;
+}
+.quality_card p{
+  padding-top: 10px;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #666768;
+  
+}
+.quality_img{
+  width: 100%;
+  height:650px;
+  border-radius: 20px 0 0 20px;
+  background-image: url(assets/Rectangle\ 998.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Team */

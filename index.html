@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StackHub</title>
+    <!-- Style -->
     <link rel="stylesheet" href="style.css">
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
@@ -18,6 +24,7 @@
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Blog</a>
+            <a href="#">Team</a>
             <a href="#">Contact</a>
         </div>
         <div class="join_btn">
@@ -35,9 +42,11 @@
     <nav id="myNav" class="overlay">
         <i href="javascript:void(0)" class="closebtn bi bi-x" onclick="closeNav()"></i>
         <div class="overlay-content">
+            
+            <a href="#">Home</a>
             <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
+            <a href="#">Blog</a>
+            <a href="#">Team</a>
             <a href="#">Contact</a>
             <a class="join_btn">
                 <button>Join Community</button>
@@ -124,11 +133,73 @@
                 online store, contact forms, </p>
            </div>
            <div class="carousel_container">
-            
+             <div class="carousel_InnerContainer">
+                 <div class="carousel_text">
+                     <h1>Startups</h1>
+                     <p>Build a website that's designed to help you grow—from SEO tools to social integration. Websites + Marketing is an all-in-one builder that does it all.</p>
+                </div>
+                 <div class="carousel swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/Rectangle 980.png" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/Rectangle 981.png" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/Rectangle 983.png" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/Rectangle 982.png" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                 </div>
+             </div>
            </div>
     </section>
+    <section class="quality">
+        <div class="service_title">
+            <h1>Bills adisicipling dolare</h1>
+            <p>Choose from over 500 designer templates - and 
+                enjoy the freedom to customize anything. Our 
+                free website builder lets you add hundreds of 
+            </p>
+        </div>
+        <div class="quality_Container">
+            <div class="qualities">
+                <div class="quality_card">
+                    <h3><i class="bi bi-coin"></i>Money Making</h3>
+                    <p>we have templates to make your idea or
+                         business look its best. Selling online? 
+                         We have store templates, too.</p>
+                </div>
+                <div class="quality_card">
+                    <h3><i class="bi bi-tag"></i>Vendors</h3>
+                    <p>Stackhub helps dolor sit amet, consec
+                         adipiscing elit eiusmod amet tempor 
+                          labore eiusmod amet dolare.</p>
+                </div>
+                <div class="quality_card">
+                    <h3><i class="bi bi-calendar-check"></i></i>Scheduling</h3>
+                    <p>we have templates to make your idea or
+                         business look its best. Selling online? 
+                         We have store templates, too.</p>
+                </div>
+                <div class="quality_card">
+                    <h3><i class="bi bi-coin"></i>Peer to Peer</h3>
+                    <p>Stackhub helps dolor sit amet, consec 
+                        adipiscing elit eiusmod amet tempor  
+                        labore eiusmod amet dolare.</p>
+                </div>
+            </div>
+            <div class="quality_img">
+                <!-- <img src="assets/Rectangle 998.png" alt=""> -->
+            </div>
+        </div>
+    </section>
+    <section class="team"></section>
 </body>
 <script>
+     var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     function openNav() {
       document.getElementById("myNav").style.width = "100%";
     }
