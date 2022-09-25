@@ -362,10 +362,9 @@
   background-color: #F6F6F7;
 }
 .quality_Container{
-  padding: 100px 0;
   width: 100%;
   padding-left: 135px;
-  height: 82vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -390,7 +389,7 @@
 .quality_card:hover h3 i{
   color: #000;
 }
-.quality_card h3{
+.quality_card h3 {
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
@@ -420,3 +419,16 @@
   background-size: cover;
 }
 /* Team */
+.team{
+  width: 100%;
+  height: auto;
+}
+.team_container{
+  width: 100%;
+  height: calc(100vh - 200px);
+  max-height: auto;
+  display:flex;
+  align-items:center;
+  padding: 265px;
+  justify-content: center;
+}
