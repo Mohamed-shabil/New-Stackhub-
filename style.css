@@ -211,10 +211,9 @@
 }
 .service_container{
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
   padding-top: 95px;
   row-gap: 84px;
 }
@@ -494,6 +493,9 @@
   }
   .services{
     padding: 10px!important;
+  }
+  .service_container{
+    grid-template-columns: repeat(1,1fr);
   }
   .service_title h1{
     font-size: 30px!important;
